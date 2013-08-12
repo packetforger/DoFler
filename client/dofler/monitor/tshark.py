@@ -63,13 +63,13 @@ class Parser(BaseParser):
                 # This is the username definitions.  As app developers use a
                 # lot of different notations for a username, we have to check
                 # for several of them.
-                for sel in ['log', 'nick' ,'user', 'username', 'uid', 'email']:
+                for sel in ['log', 'mail', 'usuario', 'nick' ,'user', 'username', 'uid', 'email']:
                     if sel in opt.lower() and username == None:
                         username = val
 
                 # And the password definitions.  As you can see, this is a lot
                 # easier to parse ;)
-                for sel in ['pass', 'pw', 'word']:
+                for sel in ['pass', 'pw', 'word', 'contrasena', 'clave']:
                     if sel in opt.lower() and password == None:
                         password = val
 
